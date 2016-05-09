@@ -19,8 +19,11 @@ public class WebAppLauncher {
         WebAppContext context = new WebAppContext();
         context.setParentLoaderPriority(true);
         context.setDescriptor(WebAppLauncher.class.getResource("/WEB-INF/web.xml").toString());
+
         // use the externalForm so that it works inside a jar
-        context.setResourceBase(WebAppLauncher.class.getClassLoader().getResource("WEB-INF").toExternalForm());
+        String basePath = WebAppLauncher.class.getClassLoader().getResource( "." ).toExternalForm();
+        context.setResourceBase(basePath);
+
         context.setContextPath("/");
         context.setParentLoaderPriority(true);
 

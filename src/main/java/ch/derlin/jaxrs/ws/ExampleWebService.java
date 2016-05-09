@@ -17,7 +17,7 @@ import javax.ws.rs.core.MediaType;
  *
  * @author Lucy Linder
  */
-@Path("/api")
+@Path("/")
 public class ExampleWebService {
 
     @GET
