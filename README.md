@@ -2,7 +2,7 @@
 
 This is a starter template for a __Java EE RESTful application__ using an embedded Jetty Server.
 
-### quick start
+## quick start
 
 __run__:
 
@@ -36,6 +36,7 @@ while the following command should display an error (negative captor-id):
 curl localhost:8680/api -X POST --header "content-type:application/json" -d '{ "timestamp": "2016-12-31T15:59:60+02:00", "captor-id": "-3", "value": "3.4", "token": "123456789-123456789-123456789-12" }' -v
 ```
 
+--------------------------
 
 ### Technologies
 
@@ -46,7 +47,8 @@ The project uses the following technologies:
  - [Jersey](https://jersey.java.net/): a RESTful Web Services framework conforming to the JAX-RS reference implementation;
  - [Jackson](http://wiki.fasterxml.com/JacksonHome): a multi-purpose Java library for processing JSON data format;
 
- ## Starter Kit
+
+### Jetty Server
 
  This project contains everything needed to develop and run quickly a Java RESTful webserver. Moreover, it is configured
  to support the standard bean annotation validation.
@@ -71,7 +73,7 @@ The only things you would like to change (except for the class names of course),
    recursive. By default, it will load the classes under `ch.derlin.jaxrs.ws`.
 
 
-##### Web Service and Java bean
+### Web Service and Java bean
 
 The sample provides one web service, `ExampleService`, which supports GET and POST methods under the path `/api`.
 The POST method accepts both JSON and XML and expects a __valid__ `InputExample` object (due to the `@Valid` annotation).
@@ -94,7 +96,7 @@ The `timestamp` field is interesting, since it shows you how to use a custom ser
 and the  `ch.derlin.jaxrs.utils.RFC3339JsonUtils` class. Here, the date is serialized/deserialized using the RFC 3339 format).  
 
 
-##### Static resources
+### Static resources
 
 In this example, any static resource under `src/main/webapp` is served (have a look at the `index.html` for more details.). To achieve this, two things:
 
