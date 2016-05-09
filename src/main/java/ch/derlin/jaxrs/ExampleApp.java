@@ -4,8 +4,14 @@ import org.glassfish.jersey.server.ResourceConfig;
 import org.glassfish.jersey.server.ServerProperties;
 
 /**
- * @author: Lucy Linder
- * @date: 09.05.2016
+ * this class configures the application.
+ * <p/>
+ * ! Important: note the two properties used to enable bean validation.
+ * <p/>
+ * Important: note the
+ * date: 09.05.2016
+ *
+ * @author Lucy Linder
  */
 public class ExampleApp extends ResourceConfig {
 

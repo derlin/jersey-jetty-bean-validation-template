@@ -3,9 +3,12 @@ package ch.derlin.jaxrs;
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.webapp.WebAppContext;
 
+
 /**
- * @author: Lucy Linder
- * @date: 09.05.2016
+ * this class launches the embedded jetty server exactly as the
+ * command "mvn jetty:run" would.
+ * date: 09.05.2016
+ * @author Lucy Linder
  */
 public class WebAppLauncher {
 
